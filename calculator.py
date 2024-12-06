@@ -1,0 +1,19 @@
+print("--welcome to calculator app--")
+
+ch=1
+while(ch!="no"):
+    #a,b=input("enter two numbers:").split()
+    a=int(input("Enter first number: "))
+    b=int(input("Enter second number: "))
+    ch=input("1 Addition(+)\n2 Substraction(-)\n3 Multiplication(*) \n4 Division(/)\nenter your choice: ")
+    if ch=='1' or ch=='+':
+        print(f"{a}+{b} =",a+b)
+    elif ch=='2' or ch=='-':
+        print(f"{a}-{b} =",a-b)
+    elif ch=='3' or ch=='*':
+        print(f"{a}*{b} =",a*b)
+    elif ch=='4' or ch=='/':
+        print(f"{a}/{b} =",a/b)
+    else:
+        print("Please enter a valid choice")
+    ch=input("wants to continue?(yes/no): ")
